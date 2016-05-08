@@ -39,13 +39,23 @@
     <link rel="stylesheet" th:href="@{/resources/css/style.css}" href="../css/style.css"/>
 
 </head>
-<body ng-app="myApp">
 
-<nav th:replace="fragments/header :: header"></nav>
+<body>
+
+<nav th:replace="fragments/header_admin :: header_admin"></nav>
+
 <main>
-    <ng-view></ng-view>
+    <div class="section white">
+        <div class="row">
+            <div class="col s12 l3 m3" th:replace="fragments/menu_admin :: menu_admin"></div>
+            <div class="col s12 l9 m9">
+                <ng-view></ng-view>
+            </div>
+        </div>
+    </div>
 </main>
-<footer th:replace="fragments/footer :: footer"></footer>
+
+<footer th:replace="fragments/footer_admin :: footer_admin"></footer>
 
 </body>
 </html>

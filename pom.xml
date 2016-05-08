@@ -140,10 +140,15 @@
 
         <!-- PostgreSQL -->
         <dependency>
-            <groupId>postgresql</groupId>
+            <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <version>${postgresql.version}</version>
+            <version>9.2-1003-jdbc4</version>
         </dependency>
+        <!--<dependency>-->
+            <!--<groupId>postgresql</groupId>-->
+            <!--<artifactId>postgresql</artifactId>-->
+            <!--<version>${postgresql.version}</version>-->
+        <!--</dependency>-->
 
         <!-- Apache Commons DBCP 2 -->
         <dependency>

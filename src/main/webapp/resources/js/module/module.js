@@ -9,6 +9,20 @@ var myApp = angular.module('myApp', ["ngRoute"]).config(function ($routeProvider
             controller: 'homeController'
         });
 
+    // ************  Articles Page  ******************
+    $routeProvider.when('/articles',
+        {
+            templateUrl: './articles.html',
+            controller: 'articlesController'
+        });
+
+    // ************  Info Page  ******************
+    $routeProvider.when('/info',
+        {
+            templateUrl: './info.html',
+            controller: 'infoController'
+        });
+
     // ************  Default Page  ******************
     $routeProvider.otherwise({redirectTo: '/home'});
 });

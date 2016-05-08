@@ -2,6 +2,8 @@
 
 var myApp = angular.module('myApp', ["ngRoute"]).config(function ($routeProvider) {
 
+    $(".button-collapse").sideNav();
+
     // ************  Home Page  ******************
     $routeProvider.when('/home',
         {
